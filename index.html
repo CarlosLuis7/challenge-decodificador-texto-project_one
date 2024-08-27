@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    
+    <main id="corpo">
+        <header id="header">
+            <img src="./assets/logo.png" alt="O logotipo da Alura ao lado o logotipo da One."/>
+            
+        </header>
+        <section id="corpo__entrada">
+            <textarea id="corpo__entrada__texto" name="" placeholder="Digite seu texto..."></textarea>
+            <div id="corpo__entrada__controle">
+                <div id="corpo__entrada__controle__mester">
+                    <img src="./assets/exclamacao_icon.svg" alt="exclamação dentro de circulo."/>
+                    <p id="corpo__entrada__controle__mester__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <div id="corpo__entrada__controle__botoes">
+                    <button onclick="criptografar()" id="corpo__entrada__controle__botao__encrypt">Criptografar</button>
+                    <button onclick="descriptografar()" id="corpo__entrada__controle__botao__decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section id="corpo__saida">
+            <div id="corpo__saida__controle">
+                <p id="corpo__saida__controle__resultado" class="hidden"></p>
+                <div id="corpo__saida__sem" class="">
+                    <img src="./assets/avatar.png" id="corpo__saida__sem__imagem" class="" alt="imagem de um ivestigar com um dos joelhos no chão, com uma lupa na mão olhando para frente."/>
+                    <div id="corpo__saida__sem__mensagem" class="">
+                        <p id="corpo__saida__sem__mensagem__encontrada" class="">Nenhuma mensagem encontrada</p>
+                        <p id="corpo__saida__sem__mensagem__texto" class="">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                </div>
+                <button onclick="copiar()" id="corpo__saida__controle__botao__copiar" class="hidden">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="./app.js" defer></script>
+
+</body>
+</html>
